@@ -1,5 +1,8 @@
 /* Fonts Section */
-*{padding:0;margin:0}
+* {
+  padding: 0;
+  margin: 0;
+}
 .navbar {
   display: flex;
   flex-direction: column;
@@ -10,6 +13,8 @@
   top: 0;
   z-index: 999;
   transition: 0.5s all ease;
+  @media screen and (max-width: 600px) {
+  }
 
   &.active {
     background-color: white;
@@ -28,14 +33,42 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
+    @media screen and (min-width: 300) and (max-width: 600px) {
+      width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 769px) and (max-width: 960px) {
+      width: 90%;
+    }
+    @media screen and (min-width: 961px) and (max-width: 1100px) {
+      width:90%
+    }
+    @media screen and (min-width: 1101px) and (max-width: 1399px) {
+      width:90%;
+    }
 
     .logo {
       font-size: 34px;
       font-weight: 900;
-      font-family: 'Macan';
+      font-family: "Macan";
+      @media screen and (min-width: 300) and (max-width: 600px) {
+        font-size: 40px;
+      }
+      @media screen and (min-width: 601px) and (max-width: 768px) {
+        font-size: 100px;
+      }
+      @media screen and (min-width: 769px) and (max-width: 960px) {
+        font-size: 40px;
+      }
 
       .text {
-        
       }
 
       .dot {
@@ -47,8 +80,14 @@
       display: flex;
       align-items: center;
       gap: 24px;
-      font-family: 'Macan';
+      font-family: "Macan";
       font-weight: 900;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        display: none;
+      }
+      @media screen and (max-width: 768px) {
+      }
 
       span {
         white-space: nowrap;
@@ -93,7 +132,7 @@
         border: 1px solid white;
         background-color: transparent;
         cursor: pointer;
-        font-weight:700;
+        font-weight: 700;
 
         &:hover {
           background-color: #1dbf73;
@@ -117,6 +156,30 @@
     justify-content: space-between;
     color: gray;
     font-weight: 300;
-    font-family: 'Macan';
+    font-family: "Macan";
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 769px) and (max-width: 960px) {
+      width: 90%;
+      font-size: 10px;
+    }
+    @media screen and (min-width: 961px) and (max-width: 1100px) {
+      width:90%;
+    }
+    @media screen and (min-width: 1101px) and (max-width: 1399px) {
+      width:90%;
+    }
+    .menuLink {
+      @media screen and (min-width: 769px) and (max-width: 960px) {
+        margin-right: 5px;
+      }
+      @media screen and (min-width: 961px) and (max-width: 1100px) {
+        margin-right:5px;
+      }
+    }
   }
 }

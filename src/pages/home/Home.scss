@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     padding: 100px 0px;
+    @media screen and (min-width: 300px) and (max-width: 600px) {
+      width:100%;
+    }
 
     &.dark {
       background-color: #0d084d;
@@ -45,15 +48,28 @@
       display: flex;
       align-items: center;
       gap: 200px;
+      @media screen and (min-width: 300px) and (max-width: 600px) {
+        flex-direction: column;
+        gap:30px;
+      }
       .item {
         display: flex;
         flex-direction: column;
         gap: 15px;
         &:first-child {
           flex: 2;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            flex:none;
+            width:90%;
+            justify-content: center;
+            align-items: center;
+          }
         }
         &:last-child {
           flex: 3;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            flex:none;
+          }
         }
 
         img {
@@ -63,6 +79,9 @@
           font-weight: 500;
           margin-bottom: 10px;
           font-weight: 900;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            font-size:20px;
+          }
         }
         .title {
           display: flex;
@@ -86,6 +105,9 @@
 
         video {
           width: 720px;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            width:100%;
+          }
         }
       }
     }

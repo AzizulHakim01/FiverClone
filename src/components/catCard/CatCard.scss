@@ -5,6 +5,10 @@
     border-radius: 5px;
     position: relative;
     cursor: pointer;
+    @media screen and (min-width: 300px) and (max-width: 600px) {
+     width:150px;
+     height:300px; 
+    }
   
     img {
       width: 100%;

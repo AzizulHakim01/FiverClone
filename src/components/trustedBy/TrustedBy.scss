@@ -3,6 +3,9 @@
     height: 100px;
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 300px) and (max-width: 600px) {
+     margin-top:20px; 
+    }
   
     .container {
       max-width: 760px;
@@ -11,10 +14,18 @@
       gap: 20px;
       color: rgb(200, 200, 200);
       font-weight: 500;
+      @media screen and (min-width: 300px) and (max-width: 600px) {
+        width:90%;
+        flex-direction: column;
+      }
   
       img{
         height: 50px;
         object-fit: contain;
+        @media screen and (min-width: 300px) and (max-width: 600px) {
+          height:30px;
+          margin-right:10px;
+        }
       }
     }
   }

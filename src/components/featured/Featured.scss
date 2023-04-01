@@ -4,19 +4,33 @@
     justify-content: center;
     background-color: #013914;
     color: white;
-  
+    
     .container {
       width: 1400px;
       display: flex;
       align-items: center;
+      @media screen and (min-width: 300px) and (max-width: 600px) {
+        width:100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding:30px 0;
+      }
   
       .left {
         display: flex;
         flex-direction: column;
         gap: 30px;
-  
+        @media screen and (min-width: 300px) and (max-width: 600px) {
+          width:95%;
+          text-align: center;
+        }
         h1 {
           font-size: 50px;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            font-size: 20px;
+            margin-top: 10px;
+          }
   
           span {
             font-style: italic;
@@ -67,6 +81,9 @@
           display: flex;
           align-items: center;
           gap: 10px;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            display:none;
+          }
   
           span {
             width: max-content;
@@ -89,6 +106,10 @@
         img {
           height: 100%;
           object-fit: contain;
+          @media screen and (min-width: 300px) and (max-width: 600px) {
+            width:100%;
+            margin-top:10px;
+          }
         }
       }
     }
